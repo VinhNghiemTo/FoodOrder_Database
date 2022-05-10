@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Active Customers:</h1>
+    <a href="/new-customer">Add a new customer</a>
+    <form action="/" method="post">
+        <table>
+            {% for customer in customer_list %}
+                <tr>
+                    <td>{{ customer['name'] }}</td>
+                    <td><input type="checkbox" name="name" value={{customer['id'] }}></td>
+                </tr>
+            {% endfor %}
+        </table>
+        <a href="/delete-customer">Delete a customer by order ID</a>
+    </form>
+    </ul>
+{% endblock %}

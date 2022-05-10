@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<form action="/delete-customer" method="delete">
+    Order ID:
+    <input type="text" orderID="orderID">
+    <input type="submit" value="Delete customer">
+</form>
+{% endblock %}

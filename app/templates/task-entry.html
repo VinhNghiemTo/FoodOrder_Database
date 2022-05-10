@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Add New Customer:</h1>
+    <form action="/add-customer" method="post">
+        <input autocomplete="off" autofocus name="customer_info" placeholder="Customer" type="text">
+        <input type="submit" value="Add Customer">
+    </form>
+    <h2>Delete Customer by Order ID:</h2>
+    <form action="/delete-customer" method="delete">
+        <input autocomplete="off" autofocus name="customer_info" placeholder="Customer" type="text">
+        <input type="submit" value="Delete Customer">
+    </form>
+{% endblock %}

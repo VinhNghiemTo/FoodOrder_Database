@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<form action="/add-customer" method="post">
+    Full Name:
+    <input type="text" name="name">
+    Order ID:
+    <input type="text" orderID="orderID">
+    Email: 
+    <input type="text" email="email">
+    <input type="submit" value="Add customer">
+<!--
+    <table>
+    {% for customer in customer_list %}
+        <tr>
+            <td>{{ customer['name'] }}</td>
+            <td><input type="checkbox" name="name" value={{customer['id'] }}></td>
+        </tr>
+    {% endfor %}
+</table>
+-->
+</form>
+{% endblock %}
